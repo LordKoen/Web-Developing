@@ -1,0 +1,50 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+	justify-content: center;
+	width: 50%;
+	margin: auto;
+	padding: 20px;
+	padding-top: 0;
+	border: 2px solid black;
+	margin-top: 20px;
+	border-radius: 10px;
+	padding-bottom: 25px;
+}
+
+.todoItem {
+	padding: 10px;
+	text-align: center;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.37);
+	width: 80%;
+	display: flex;
+	margin: auto;
+	margin-bottom: 2px;
+}
+
+.checkbox {
+	position: relative;
+	top: 6px;
+}
+
+.h1 {
+	margin-top: 25px;
+	margin-top: 25px;
+	text-align: center;
+}
+
+.completedStyle {
+	text-decoration: line-through;
+	font-style: italic;
+	color: rgb(197, 197, 197);
+}
+
+#margin {
+	margin-left: 5px;
+}
+
+button {
+	width: inherit;
+	margin: auto;
+}

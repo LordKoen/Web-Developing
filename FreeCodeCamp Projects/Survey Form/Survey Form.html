@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  </head>
+  <body>
+    <div id="navbar">
+        <div id="logo" class="navbaritem">
+            <a href="">Luca Oppes</a> 
+        </div>
+        <div id="OwnForm" class="navbaritem enditem" >
+            <a href="">create your own form</a>
+        </div>
+        <div id="Work" class="navbaritem enditem">
+            <a href="">Work with us</a>
+        </div>
+        <div id="AboutMe" class="navbaritem enditem">
+            <a href="">About Me</a>
+        </div>
+    </div>
+
+    <main id="main">
+      <div id="title-description">
+        <h1 id="title">
+          Programming Progress 
+        </h1>
+        <p id="description">
+          <i>A quick form to check how you are progressing in your learning how to programm endeavours</i>
+        </p>
+      </div>  
+
+      <form action="" id="form">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Name" id="name" class="textinput" required>
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" class="textinput" required>
+        <br>
+        
+        <label for="age">Age (optional)</label>
+        <input type="number" name="age" id="age" placeholder="Age" class="textinput" min="13" max="99">
+        <br>
+
+        <label for="dropdown">Why have you started to learn programming?</label>
+        <select name="dropdown" id="dropdown">
+          <option value="" disabled selected>Select reason</option>
+          <option value="Fun">For fun</option>
+          <option value="Work">For work</option>
+          <option value="hobbie">As a hobby</option>
+          <option value="noreason">Just felt like it</option>
+        </select>
+        <br>
+
+        How many hours do you dedicate to week?
+        <div>
+          <input type="radio" name="hours" id="0to2" class="radio">
+          <label for="0to2" class="radio">0 to 2 hours</label>
+        </div>
+        <div>
+          <input type="radio" name="hours" id="2to5" class="radio">
+          <label for="2to5" class="radio">2 to 5 hours</label>
+        </div>
+        <div>
+          <input type="radio" name="hours" id="5to10" class="radio">
+          <label for="5to10" class="radio">5 to 10 hours</label>
+        </div>
+        <div>
+          <input type="radio" name="hours" id="10to30" class="radio">
+          <label for="10to30" class="radio">10 to 30 hours</label>
+        </div>
+        <div>
+          <input type="radio" name="hours" id="30plus" class="radio">
+          <label for="30plus" class="radio">30 or more hours</label>
+        </div>
+        <br>
+
+        Which of the following programming languages are you learning: (Select all that apply)
+        <div>
+          <input type="checkbox" name="languages" id="Java" class="checkbox">
+          <label for="Java">Java</label>
+        </div>
+        <div>
+          <input type="checkbox" name="languages" id="Python" class="checkbox">
+          <label for="Python">Python</label>
+        </div>
+        <div>
+          <input type="checkbox" name="languages" id="C" class="checkbox">
+          <label for="C">C</label>
+        </div>
+        <div>
+          <input type="checkbox" name="languages" id="Ruby" class="checkbox">
+          <label for="Ruby">Ruby</label>
+        </div>
+        <div>
+          <input type="checkbox" name="languages" id="JavaScript" class="checkbox">
+          <label for="JavaScript">JavaScript</label>
+        </div>
+        <div>
+          <input type="checkbox" name="languages" id="C#" class="checkbox">
+          <label for="C#">C#</label>
+        </div>
+        <div>
+          <input type="checkbox" name="languages" id="PHP" class="checkbox">
+          <label for="PHP">PHP</label>
+        </div>
+        <div>
+          <input type="checkbox" name="languages" id="HTML" class="checkbox">
+          <label for="HTML">HTML</label>
+        </div>
+        <div>
+          <input type="checkbox" name="languages" id="CSS" class="checkbox">
+          <label for="CSS">CSS</label>
+        </div>
+        <div>
+          <input type="checkbox" name="languages" id="SQL" class="checkbox">
+          <label for="SQL">SQL</label>
+        </div>
+        <br>
+
+        <label for="comments">If you would like, tell me more about your programming journey:</label>
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Extra Comments"></textarea>
+        <br>
+        <br>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+  </main>
+  </body>
+</html>

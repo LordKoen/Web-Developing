@@ -1,0 +1,341 @@
+/* Pallete https://www.canva.com/colors/color-palettes/pensive-mood/ */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#margin {
+    height: 4.4rem;
+}
+
+#logo-img {
+    height: 2.5rem;
+    position: relative;
+    top: 0.2rem;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-transform: capitalize;
+    position: fixed;
+    width: 100%;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    font-size: 2rem;
+    padding: 8px;
+    background-color: #000401;
+    clear: both;
+    color: white;
+    z-index: 10;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: inherit;
+    transform: scale(2.5);
+}
+
+.navbaritems:hover {
+    transform: scale(1.2);
+}
+
+#logo {
+    margin-right: auto;
+}
+
+#logo, #navfeatures, #navtrailer, #navpricing  {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#imgdiv {
+    background-color: white;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#startimg {
+    width: 50vw;
+    display: block;
+    margin: auto;
+    animation-name: imganimation;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+#Laptop3 {
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+    animation-name: textanimation;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    z-index: 1;
+}
+
+#featureshead, #trailerhead {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#features {
+    position: relative;
+    bottom: 7rem;
+    color: purple;
+    font-size: 2rem;
+}
+
+#trailer {
+    position: relative;
+    bottom: 8rem;
+    color: purple;
+    font-size: 2rem;
+}
+
+#main {
+    padding: 1.4rem;
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, fit-content);
+    grid-template-areas:
+    "introduction"
+    "firstfeature"
+    "secondfeature"
+    "thirdfeature";
+    grid-gap: 10px;
+    padding-bottom: 0.2rem;
+}
+
+#introtext {
+    text-align: center;
+}
+
+#introduction {
+    font-size: 2rem;
+    grid-area: introduction;
+    border: 1px solid #B7CFDC;
+    background-color: #B7CFDC;
+    padding: 5px;
+    border-radius: 5px;
+    justify-self: center;
+}
+
+#introimg, #sfimg {
+    float: left;
+    width: auto;
+    max-width: 20%;
+    margin: 10px;
+}
+
+#ffimg, #tfimg {
+    float: right;
+    width: auto;
+    max-width: 20%;
+    margin: 10px;
+}
+
+#introparagraph {
+    line-height: 3rem;
+}
+
+#firstfeature {
+    font-size: 2rem;
+    grid-area: firstfeature;
+    border: 1px solid #ADB3BC;
+    background-color: #ADB3BC;
+    padding: 5px;
+    border-radius: 5px;
+    justify-self: center;
+}
+
+#secondfeature {
+    font-size: 2rem;
+    grid-area: secondfeature;
+    border: 1px solid #B7CFDC;
+    background-color: #B7CFDC;
+    padding: 5px;
+    border-radius: 5px;
+    justify-self: center;
+}
+
+#thirdfeature {
+    font-size: 2rem;
+    grid-area: thirdfeature;
+    border: 1px solid #ADB3BC;
+    background-color: #ADB3BC;
+    padding: 5px;
+    border-radius: 5px;
+    justify-self: center;
+}
+
+
+@media (min-width: 1201px) {
+    #startimg {
+        width: 35vw;
+    }
+    #introduction, #firstfeature, #secondfeature, #thirdfeature  {
+        width: 70vw;
+    }
+
+    #trailerdiv2 {
+        display: block;
+        width: 40%;
+        margin: 0 auto
+    }
+
+}
+
+@keyframes imganimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes textanimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+#trailerdiv {
+    display: block;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+#trailerdiv iframe {
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#trailerdiv2 {
+    padding-right: 1.4rem;
+    padding-left: 1.4rem;
+    margin-top: 0;
+}
+
+#pricing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    grid-gap: 5rem;
+    padding: 1.4rem;
+}
+
+#pricinghead {
+    text-align: center;
+    font-size: 3rem;
+    flex-basis: 100%;
+}
+
+.price {
+    height: 230px;
+    width: 170px;
+    margin: 4rem;
+    font-size: 1.9rem;
+    padding: 3rem;
+    padding-left: 1rem;
+    background-color: #D4F1F4;
+    border: solid 1px #242E2D;
+    border-radius: 5px;
+}
+
+.price a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.2rem;
+    border: solid black 1px;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    background-color: #05445E;
+    color: white;
+}
+
+#emaildiv {
+    padding: 1.4rem;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.0rem;
+}
+
+#email {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0.9rem;
+    border-radius: 5px;
+    padding: 0.5rem;
+    border: black solid 1px;
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    #introimg, #ffimg, #sfimg, #tfimg {
+        max-width: 60%;
+    }
+
+    .price {
+        margin: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #introimg, #ffimg, #sfimg, #tfimg {
+        max-width: 95%;
+    }
+    
+    #imgdiv {
+        display: none;
+    }
+    
+    .price {
+        margin: 0.6rem;
+        margin-right: 0.4rem;
+        margin-left: 0.4rem;
+        width: 150px;
+        height: 240px;
+        font-size: 1.8rem;
+    }
+
+    #emaildiv {
+        line-height: 2rem;
+    }
+}

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+}
+
+html {
+    font-family: "Lato";
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#maindiv {
+    display: flex;
+}
+
+#navbar {
+    display: flex;
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+    background-color: #fff8c9;
+    color: black;
+    font-size: 3.0rem;
+    text-transform: capitalize;
+}
+
+.navelement {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid #cfcbb2;
+    color: black;
+}
+
+.navelement:hover {
+    animation-name: box-filling;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.navelement:focus {
+    background-color: #f2d385;
+}
+
+@keyframes box-filling {
+    100% {
+        background-color: #f2d385;
+    }
+}
+
+#main-doc {
+    width: 70%;
+    margin-left: 30%;
+    flex-direction: column;
+    background-color: #fffef7;
+    height: 100%;
+    padding: 1.4rem;
+    padding-top: 0;
+    font-size: 2rem;
+}
+
+.main-section {
+    border-bottom: solid black 2px;
+}
+
+@media (min-width: 1500px) {
+    #navbar {
+        width: 15%;
+    }
+
+    #main-doc {
+        width: 85%;
+        margin-left: 15%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1499px) {
+    #navbar {
+        width: 20%;
+    }
+
+    #main-doc {
+        width: 80%;
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 500px) {
+    
+}

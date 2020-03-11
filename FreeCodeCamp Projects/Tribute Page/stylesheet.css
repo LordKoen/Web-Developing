@@ -1,0 +1,120 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+#main {
+    background-color: hsl(240, 10%, 90%);
+    padding: 15px;
+}
+
+#title {
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: hsl(240, 10%, 90%);
+    padding: 4px;
+    line-height: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 1251px) {
+    img {
+        max-width: 70%;
+    }
+}
+
+#img-div {
+    padding: 15px;
+    background-color: hsl(240, 100%, 99%);
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+#caption {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "Katara Sokka Toph Zuko"
+    "Katara Aang Aang Zuko";
+    font-size: 1.5rem;
+    line-height: 2rem;
+    grid-gap: 4px;
+    background-color: hsl(0, 50%, 94%);
+    list-style-position: inside;
+}
+
+@media (max-width: 800px) {
+    #grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 500px);
+        grid-template-areas:
+        "Katara"
+        "Sokka"
+        "Toph"
+        "Zuko"
+        "Aang";
+        font-size: 1rem;
+        grid-gap: 0px;
+    }
+}
+
+.phone-line {
+    justify-self: end;
+    background-color: black;
+    height: 2px;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+.divisor {
+    background-color: black;
+    height: 2px;
+}
+
+#grid-container li {
+    margin: 8px;
+}
+
+#Katara {
+    grid-area: Katara;
+    background-color: hsl(240, 10%, 90%);
+}
+
+#Sokka {
+    grid-area: Sokka;
+    background-color: hsl(240, 10%, 90%);
+}
+
+#Toph {
+    grid-area: Toph;
+    background-color: hsl(240, 10%, 90%);
+}
+
+#Zuko {
+    grid-area: Zuko;
+    background-color: hsl(240, 10%, 90%);
+}
+
+#Aang {
+    grid-area: Aang;
+    background-color: hsl(240, 10%, 90%);
+}
