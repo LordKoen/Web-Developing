@@ -4,5 +4,10 @@ import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import '../styles/Main.css';
 
-export default () => <div>Hello world!</div>
+function App() {
+	return <div>Hello world!</div>;
+}
+
+export default App;
