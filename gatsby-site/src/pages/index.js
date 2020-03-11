@@ -169,19 +169,14 @@ function App() {
 					<div className="row justify-content-center">
 						<div className="col-xl-4 col-lg-7 col-md-8 col-sm-11 col-11 twitter-feed order-2">
 							<a
-								className="twitter-timeline"
-								data-width="100%"
+								class="twitter-timeline"
+                                href="https://twitter.com/Twitter?ref_src=twsrc%5Etfw"
+                                data-width="100%"
 								data-height="550.66px"
 								data-theme="light"
-								href="https://twitter.com/Twitter"
 							>
 								Tweets by Twitter
-							</a>{' '}
-							<script
-								async
-								src="https://platform.twitter.com/widgets.js"
-								charset="utf-8"
-							/>
+							</a>
 							<form
 								action="https://formspree.io/xnqdddbr"
 								method="POST"

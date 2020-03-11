@@ -17,6 +17,7 @@
     "bootstrap": "^4.4.1",
     "gatsby": "^2.19.7",
     "gatsby-plugin-react-helmet": "^3.1.23",
+    "gatsby-plugin-twitter": "^2.1.20",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.1",
     "react": "^16.12.0",
