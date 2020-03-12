@@ -5,19 +5,16 @@
  */
 
 module.exports = {
-	plugins: [ 'gatsby-plugin-react-helmet' ],
-	plugins: [ `gatsby-plugin-twitter` ]
-};
-
-module.exports = {
 	plugins: [
+		'gatsby-plugin-react-helmet',
 		{
 			resolve: `gatsby-plugin-s3`,
 			options: {
-        bucketName: 'gatsby-test-deploy-lordkoen',
-        protocol: "https",
-        hostname: "www.example.com",
+				bucketName: 'gatsby-test-deploy-lordkoen',
+				protocol: 'https',
+				hostname: 'www.example.com'
 			}
-		}
+		},
+		`gatsby-plugin-twitter`
 	]
 };
