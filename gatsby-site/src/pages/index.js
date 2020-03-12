@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import '../styles/Main.css';
 import Helmet from 'react-helmet';
@@ -20,7 +20,7 @@ function App() {
 			!navbar.classList.contains('bg-light', 'navbar-light')
 		) {
 			navbar.classList.add('bg-light', 'navbar-light');
-			for (var i = 0; i < navIcon.length; i++) {
+			for (let i = 0; i < navIcon.length; i++) {
 				navIcon[i].style.color = 'black';
 			}
 			caretUp.style.display = 'inline';
@@ -35,7 +35,7 @@ function App() {
 		let caretDown = document.getElementById('caret-down');
 
 		navbar.classList.remove('bg-light', 'navbar-light');
-		for (var i = 0; i < navIcon.length; i++) {
+		for (let i = 0; i < navIcon.length; i++) {
 			navIcon[i].style.color = 'white';
 		}
 		caretUp.style.display = 'none';
