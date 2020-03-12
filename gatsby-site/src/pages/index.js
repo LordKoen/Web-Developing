@@ -2,12 +2,46 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import '../styles/Main.css';
 import Helmet from 'react-helmet';
 
 function App() {
+	function fixNavbar() {
+		let navbar = document.getElementById('navigationbar');
+		let navIcon = document.getElementsByClassName('nav-icon');
+		let caretUp = document.getElementById('caret-up');
+		let caretDown = document.getElementById('caret-down');
+
+		if (navbar.classList.contains('bg-light', 'navbar-light')) {
+			setTimeout(fixNavbar2, 300);
+		} else if (
+			!navbar.classList.contains('bg-light', 'navbar-light')
+		) {
+			navbar.classList.add('bg-light', 'navbar-light');
+			for (var i = 0; i < navIcon.length; i++) {
+				navIcon[i].style.color = 'black';
+			}
+			caretUp.style.display = 'inline';
+			caretDown.style.display = 'none';
+		}
+	}
+
+	function fixNavbar2() {
+		let navbar = document.getElementById('navigationbar');
+		let navIcon = document.getElementsByClassName('nav-icon');
+		let caretUp = document.getElementById('caret-up');
+		let caretDown = document.getElementById('caret-down');
+
+		navbar.classList.remove('bg-light', 'navbar-light');
+		for (var i = 0; i < navIcon.length; i++) {
+			navIcon[i].style.color = 'white';
+		}
+		caretUp.style.display = 'none';
+		caretDown.style.display = 'inline';
+	}
+
 	return (
 		<React.Fragment>
 			<Helmet>
@@ -37,7 +71,7 @@ function App() {
 							className="navbar-toggler my-socialmedia"
 							data-toggle="collapse"
 							data-target="#navbarMenu"
-							onclick="fixNavbar()"
+							onClick={fixNavbar}
 						>
 							<span id="social-media nav-icon">
 								<span className="nav-icon">
@@ -62,6 +96,7 @@ function App() {
 									<a
 										href="https://www.facebook.com/josie.proto.music/"
 										target="_blank"
+										rel="noopener noreferrer"
 										className="nav-link"
 									>
 										<span className="d-inline d-sm-none d-xl-inline nav-icon">
@@ -74,6 +109,7 @@ function App() {
 									<a
 										href="https://www.instagram.com/josieproto/?hl=en"
 										target="_blank"
+										rel="noopener noreferrer"
 										className="nav-link"
 									>
 										<span className="d-inline d-sm-none d-xl-inline nav-icon">
@@ -86,6 +122,7 @@ function App() {
 									<a
 										href="https://twitter.com/josieproto?lang=en"
 										target="_blank"
+										rel="noopener noreferrer"
 										className="nav-link"
 									>
 										{' '}
@@ -99,6 +136,7 @@ function App() {
 									<a
 										href=""
 										target="_blank"
+										rel="noopener noreferrer"
 										className="nav-link"
 									>
 										<span className="d-inline d-sm-none d-xl-inline nav-icon">
@@ -111,6 +149,7 @@ function App() {
 									<a
 										href="https://www.youtube.com/channel/UCncK76CuAfrovl-B1dvkqTg/videos"
 										target="_blank"
+										rel="noopener noreferrer"
 										className="nav-link"
 									>
 										<span className="d-inline d-sm-none d-xl-inline nav-icon">
@@ -123,6 +162,7 @@ function App() {
 									<a
 										href="https://soundcloud.com/josie-proto"
 										target="_blank"
+										rel="noopener noreferrer"
 										className="nav-link"
 									>
 										<span className="d-inline d-sm-none d-xl-inline nav-icon">
@@ -156,6 +196,7 @@ function App() {
 							<a
 								href="spotify"
 								target="_blank"
+								rel="noopener noreferrer"
 								className="banner-text"
 								id="banner-link"
 							>
@@ -169,9 +210,9 @@ function App() {
 					<div className="row justify-content-center">
 						<div className="col-xl-4 col-lg-7 col-md-8 col-sm-11 col-11 twitter-feed order-2">
 							<a
-								class="twitter-timeline"
-                                href="https://twitter.com/Twitter?ref_src=twsrc%5Etfw"
-                                data-width="100%"
+								className="twitter-timeline"
+								href="https://twitter.com/Twitter?ref_src=twsrc%5Etfw"
+								data-width="100%"
 								data-height="550.66px"
 								data-theme="light"
 							>
@@ -183,7 +224,7 @@ function App() {
 								className="text-center white"
 							>
 								<div className="form-group">
-									<label for="email">
+									<label htmlFor="email">
 										Sign up to my mailing list
 									</label>
 									<input

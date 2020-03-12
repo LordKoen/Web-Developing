@@ -25,3 +25,4 @@ function fixNavbar2() {
         caretUp.style.display = "none";
         caretDown.style.display = "inline";
 }
+
