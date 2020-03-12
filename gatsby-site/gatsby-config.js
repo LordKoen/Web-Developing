@@ -5,14 +5,19 @@
  */
 
 module.exports = {
-  plugins: [
-    {
-      resolve: `gatsby-plugin-s3`,
-      options: {
-        bucketName: "gatsby-test-deploy-lordkoen",
-      },
-    },
-  ],
 	plugins: [ 'gatsby-plugin-react-helmet' ],
 	plugins: [ `gatsby-plugin-twitter` ]
+};
+
+module.exports = {
+	plugins: [
+		{
+			resolve: `gatsby-plugin-s3`,
+			options: {
+        bucketName: 'gatsby-test-deploy-lordkoen',
+        protocol: "https",
+        hostname: "www.example.com",
+			}
+		}
+	]
 };
