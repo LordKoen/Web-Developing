@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import Popper from 'popper.js';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '../styles/Main.css';
@@ -10,37 +9,41 @@ import { window, document, exists } from 'browser-monads';
 
 function App() {
 	function fixNavbar() {
-		let navbar = document.getElementById('navigationbar');
-		let navIcon = document.getElementsByClassName('nav-icon');
-		let caretUp = document.getElementById('caret-up');
-		let caretDown = document.getElementById('caret-down');
+		if (typeof window !== `undefined`) {
+			let navbar = document.getElementById('navigationbar');
+			let navIcon = document.getElementsByClassName('nav-icon');
+			let caretUp = document.getElementById('caret-up');
+			let caretDown = document.getElementById('caret-down');
 
-		if (navbar.classList.contains('bg-light', 'navbar-light')) {
-			setTimeout(fixNavbar2, 300);
-		} else if (
-			!navbar.classList.contains('bg-light', 'navbar-light')
-		) {
-			navbar.classList.add('bg-light', 'navbar-light');
-			for (let i = 0; i < navIcon.length; i++) {
-				navIcon[i].style.color = 'black';
+			if (navbar.classList.contains('bg-light', 'navbar-light')) {
+				setTimeout(fixNavbar2, 300);
+			} else if (
+				!navbar.classList.contains('bg-light', 'navbar-light')
+			) {
+				navbar.classList.add('bg-light', 'navbar-light');
+				for (let i = 0; i < navIcon.length; i++) {
+					navIcon[i].style.color = 'black';
+				}
+				caretUp.style.display = 'inline';
+				caretDown.style.display = 'none';
 			}
-			caretUp.style.display = 'inline';
-			caretDown.style.display = 'none';
 		}
 	}
 
 	function fixNavbar2() {
-		let navbar = document.getElementById('navigationbar');
-		let navIcon = document.getElementsByClassName('nav-icon');
-		let caretUp = document.getElementById('caret-up');
-		let caretDown = document.getElementById('caret-down');
+		if (typeof window !== `undefined`) {
+			let navbar = document.getElementById('navigationbar');
+			let navIcon = document.getElementsByClassName('nav-icon');
+			let caretUp = document.getElementById('caret-up');
+			let caretDown = document.getElementById('caret-down');
 
-		navbar.classList.remove('bg-light', 'navbar-light');
-		for (let i = 0; i < navIcon.length; i++) {
-			navIcon[i].style.color = 'white';
+			navbar.classList.remove('bg-light', 'navbar-light');
+			for (let i = 0; i < navIcon.length; i++) {
+				navIcon[i].style.color = 'white';
+			}
+			caretUp.style.display = 'none';
+			caretDown.style.display = 'inline';
 		}
-		caretUp.style.display = 'none';
-		caretDown.style.display = 'inline';
 	}
 
 	return (
