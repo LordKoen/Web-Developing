@@ -215,13 +215,13 @@ function App() {
 						<div className="col-xl-4 col-lg-7 col-md-8 col-sm-11 col-11 twitter-feed order-2">
 							<a
 								className="twitter-timeline"
-								href="https://twitter.com/Twitter?ref_src=twsrc%5Etfw"
+								href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw"
 								data-width="100%"
 								data-height="550.66px"
 								data-theme="light"
 							>
-								Tweets by Twitter
-							</a>
+								Tweets by TwitterDev
+							</a>{' '}
 							<form
 								action="https://formspree.io/xnqdddbr"
 								method="POST"
