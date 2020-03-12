@@ -5,7 +5,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '../styles/Main.css';
 import Helmet from 'react-helmet';
-import { window, document, exists } from 'browser-monads';
 
 function App() {
 	function fixNavbar() {
