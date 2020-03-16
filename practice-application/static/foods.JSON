@@ -1,0 +1,30 @@
+[
+	{
+		"title": "Chips",
+		"price": "£2.50",
+		"isVegan": true,
+		"shortDesc": "",
+		"longDesc": ""
+	},
+	{
+		"title": "Beans",
+		"price": "£2.00",
+		"isVegan": true,
+		"shortDesc": "",
+		"longDesc": ""
+	},
+	{
+		"title": "Burger",
+		"price": "£5.50",
+		"isVegan": false,
+		"shortDesc": "",
+		"longDesc": ""
+	},
+	{
+		"title": "Chicken Nuggets",
+		"price": "£5.00",
+		"isVegan": false,
+		"shortDesc": "",
+		"longDesc": ""
+	}
+]
