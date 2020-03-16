@@ -2,19 +2,17 @@ import React from 'react';
 import Layout from '../Components/layout';
 import { Link } from 'gatsby';
 
-function About() {
+function Contact() {
 	return (
 		<Layout>
 			<div>
 				<h1>Luca Oppes</h1>
 				<p>
-					I am currently in my Gap year before going to
-					university to study Natural sciences <br /> Right now I
-					am learning to be Web Developer
+					You can reach me in the following places:
 				</p>
 			</div>
 		</Layout>
 	);
 }
 
-export default About;
+export default Contact;
