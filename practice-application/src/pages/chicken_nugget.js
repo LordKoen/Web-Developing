@@ -2,15 +2,14 @@ import React from 'react';
 import Layout from '../Components/layout';
 import foodList from '../../static/foods.JSON';
 
-function chips() {
+function chicken_nugget() {
 	let item = foodList.filter((item) => {
-		if (item.path == 'chips') {
+		if (item.path == 'chicken_nugget') {
 			return item;
 		}
-    });
-    
+	});
 
-	return <Layout item={item[0]}/>;
+	return <Layout item={item[0]} />;
 }
 
-export default chips;
+export default chicken_nugget;

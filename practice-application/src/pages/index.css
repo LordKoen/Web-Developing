@@ -27,9 +27,14 @@
 }
 
 .itemDiv {
-	display: flex;
+    display: flex;
+    text-decoration: none !important;
 }
 
 .leftItem {
     margin-right: auto;
+}
+
+.text {
+    color: black;
 }
