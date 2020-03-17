@@ -32,7 +32,10 @@
 }
 
 .leftItem {
-    margin-right: auto;
+	margin-right: auto;
+	color: black;
+	display: flex;
+	flex-direction: column;
 }
 
 .text {

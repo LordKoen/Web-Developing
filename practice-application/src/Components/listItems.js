@@ -3,17 +3,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Col from 'react-bootstrap/Col';
 import '../pages/index.css';
 import { Link } from 'gatsby';
+import Card from 'react-bootstrap/Card';
 
 function ListItems(props) {
 	let linkTo = '/' + props.item.slug;
 	return (
 		<Col key={Math.random()} xs="12" className="item">
 			<Link to={linkTo} className="itemDiv">
-				<div className="leftItem">
-					<div className="text">{props.item.title}</div>
-					<div className="text">{props.item.price} </div>
-				</div>
-				<div>
+				<section className="leftItem">
+					<span>{props.item.title}</span>
+					<span>{props.item.price} </span>
+				</section>
+				<section>
 					<div className="text">{props.item.shortDesc}</div>
 					<div>
 						{props.item.isVegan ? (
@@ -22,7 +23,7 @@ function ListItems(props) {
 							<span id="red">Not Vegan</span>
 						)}
 					</div>
-				</div>
+				</section>
 			</Link>
 		</Col>
 	);
