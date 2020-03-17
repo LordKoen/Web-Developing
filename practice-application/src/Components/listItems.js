@@ -5,7 +5,7 @@ import '../pages/index.css';
 import { Link } from 'gatsby';
 
 function ListItems(props) {
-	let linkTo = '/' + props.item.path;
+	let linkTo = '/' + props.item.slug;
 	return (
 		<Col key={Math.random()} xs="12" className="item">
 			<Link to={linkTo} className="itemDiv">

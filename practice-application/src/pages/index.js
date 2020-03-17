@@ -1,5 +1,5 @@
 import React from 'react';
-import foodList from '../../static/foods.JSON';
+import foodList from '../../foods.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';

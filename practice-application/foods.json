@@ -6,7 +6,7 @@
 		"shortDesc": "Lorem, ipsum",
 		"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quisquam quaerat nobis distinctio corrupti reprehenderit, magnam qui nam a beatae! Incidunt dolore unde commodi. Tempore ipsum animi ab illo assumenda.",
 		"imgURL": "https://againstallgrain.com/wp-content/uploads/2019/02/IMG_3404.jpg",
-		"path": "chips"
+		"slug": "chips"
 	},
 	{
 		"title": "Beans",
@@ -15,7 +15,7 @@
 		"shortDesc": "Lorem, ipsum",
 		"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quisquam quaerat nobis distinctio corrupti reprehenderit, magnam qui nam a beatae! Incidunt dolore unde commodi. Tempore ipsum animi ab illo assumenda.",
 		"imgURL": "https://images2.minutemediacdn.com/image/upload/c_crop,h_1121,w_2000,x_0,y_112/f_auto,q_auto,w_1100/v1554704051/shape/mentalfloss/istock-1008429650.jpg",
-		"path": "beans"
+		"slug": "beans"
 	},
 	{
 		"title": "Burger",
@@ -24,7 +24,7 @@
 		"shortDesc": "Lorem, ipsum",
 		"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quisquam quaerat nobis distinctio corrupti reprehenderit, magnam qui nam a beatae! Incidunt dolore unde commodi. Tempore ipsum animi ab illo assumenda.",
 		"imgURL": "https://www.rd.com/wp-content/uploads/2019/04/burger.jpg",
-		"path": "burger"
+		"slug": "burger"
 	},
 	{
 		"title": "Chicken Nuggets",
@@ -33,6 +33,6 @@
 		"shortDesc": "Lorem, ipsum",
 		"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quisquam quaerat nobis distinctio corrupti reprehenderit, magnam qui nam a beatae! Incidunt dolore unde commodi. Tempore ipsum animi ab illo assumenda.",
 		"imgURL": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBVptg2.img?h=0&w=720&m=6&q=60&u=t&o=f&l=f&x=505&y=352",
-		"path": "chicken_nugget"
+		"slug": "chicken_nugget"
 	}
 ]
