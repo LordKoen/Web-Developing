@@ -41,3 +41,8 @@
 .text {
     color: black;
 }
+
+.button {
+	position: relative;
+	left: 12px;
+}

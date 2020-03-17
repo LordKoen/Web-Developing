@@ -19,7 +19,7 @@ function Index() {
 
 	return (
 		<Container className="mainContainer">
-			<Row className="justify-content-center">{itemList}</Row>
+			{itemList}
 		</Container>
 	);
 }
