@@ -6,16 +6,16 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './index.css';
 import { Link } from 'gatsby';
+import ListItems from '../Components/listItems';
 
 function Index() {
 	let itemList = foodList.map((item) => {
 		return (
-			<Col key={Math.random()} xs="12" className="item">
-				<Link to={item.title} className="clickable">
-					<div className="center">{item.title}</div>
-					<div className="center">{item.price} </div>
-				</Link>
-			</Col>
+			<ListItems
+				foodList={foodList}
+				item={item}
+				key={Math.random()}
+			/>
 		);
 	});
 
