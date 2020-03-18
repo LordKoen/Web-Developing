@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import layoutStyles from './layout.module.css';
+import Button from 'react-bootstrap/Button';
 
 function Cart(props) {
 	const filteredArr = Array.from(
@@ -22,7 +23,19 @@ function Cart(props) {
 				key={Math.random()}
 				className={layoutStyles.cartContainer}
 			>
-				<span style={{ display: 'block' }}>{item.title}</span>
+				<span style={{ display: 'block' }}>
+					{item.title}
+					<Button
+						size="sm"
+						className={layoutStyles.button}
+						variant="outline-primary"
+						onClick={props.delete}
+						id={item.id}
+						price={item.price}
+					>
+						Remove
+					</Button>
+				</span>
 				<span>{item.price}</span>
 				<span className={layoutStyles.floatRight}>
 					{currentQuantity.quantity}

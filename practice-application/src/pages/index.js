@@ -17,8 +17,8 @@ function Index() {
 	useEffect(
 		() => {
 			console.log('cart', cart);
-			console.log('cartQuantity', cartQuantity);
-			console.log('total', total);
+			// console.log('cartQuantity', cartQuantity);
+			// console.log('total', total);
 		},
 		[ cart, cartQuantity, total ]
 	);
@@ -39,10 +39,8 @@ function Index() {
 		const price = event.target.getAttribute('price');
 
 		setCartQuantity((prevState) => {
-			let currentItem = prevState.find((item) => item.id == id);
+			let currentItem = prevState.find((item) => +item.id === +id);
 			let newValue = currentItem.quantity++;
-			console.log('currentItem', currentItem);
-			console.log('newValue', newValue);
 			return [ ...prevState ];
 		});
 
@@ -62,14 +60,29 @@ function Index() {
 		});
 	}
 
-	function deleteitem(event) {
+	function handleDelete(event) {
 		const { id, title } = event.currentTarget;
 		const price = event.target.getAttribute('price');
 
+		console.log(id);
 		setCartQuantity((prevState) => {
-			let currentItem = prevState.find((item) => item.id == id);
-			let newValue = currentItem.quantity--;
+			let currentItem = prevState.find((item) => +item.id === +id);
+			if (currentItem.quantity > 0) {
+				currentItem.quantity--;
+			}
 			return [ ...prevState ];
+		});
+
+		setTotal((prevState) => {
+			return prevState - +price.slice(1);
+		});
+
+		setCart((prevState) => {
+			let deleteItem = prevState.find((item) => +item.id === +id);
+			let newArr = prevState.filter((item) => {
+				return item != deleteItem;
+			});
+			return newArr;
 		});
 	}
 
@@ -88,8 +101,13 @@ function Index() {
 	return (
 		<Container className="mainContainer">
 			{itemList}
-			{cart.length === 0 ? null : (
-				<Cart cart={cart} quantity={cartQuantity} total={total} />
+			{total === 0 ? null : (
+				<Cart
+					delete={handleDelete}
+					cart={cart}
+					quantity={cartQuantity}
+					total={total}
+				/>
 			)}
 		</Container>
 	);

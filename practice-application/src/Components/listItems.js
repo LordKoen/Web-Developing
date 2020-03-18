@@ -37,7 +37,7 @@ function ListItems(props) {
 					title={props.item.title}
 					price={props.item.price}
 				>
-					Buy
+					Add
 				</Button>
 			</Col>
 		</Row>

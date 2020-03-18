@@ -29,3 +29,8 @@ html {
 .floatRight {
 	float: right;
 }
+
+.button {
+	padding: 0 5px 1px 5px !important;
+	float: right;
+}
