@@ -32,6 +32,10 @@ function ListItems(props) {
 					size="sm"
 					xs="3"
 					className="button"
+					onClick={props.handleClick}
+					id={props.id}
+					title={props.item.title}
+					price={props.item.price}
 				>
 					Buy
 				</Button>
