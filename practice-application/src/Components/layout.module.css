@@ -25,3 +25,7 @@ html {
 .cart {
 	margin-top: 25px;
 }
+
+.floatRight {
+	float: right;
+}

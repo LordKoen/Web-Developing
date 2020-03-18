@@ -8,28 +8,68 @@ import Cart from '../Components/cart';
 
 function Index() {
 	const [ cart, setCart ] = useState([]);
+	const [ cartQuantity, setCartQuantity ] = useState(() => {
+		const initialState = cartQuantityInitialise();
+		return initialState;
+	});
+	const [ total, setTotal ] = useState(0);
 
 	useEffect(
 		() => {
-			console.log(cart);
+			console.log('cart', cart);
+			console.log('cartQuantity', cartQuantity);
+			console.log('total', total);
 		},
-		[ cart ]
+		[ cart, cartQuantity, total ]
 	);
+
+	function cartQuantityInitialise() {
+		let intialState = foodList.map((item) => {
+			return {
+				id: item.id,
+				quantity: 0,
+				price: item.price
+			};
+		});
+		return intialState;
+	}
 
 	function handleClick(event) {
 		const { id, title } = event.currentTarget;
 		const price = event.target.getAttribute('price');
 
-		console.log(id);
-		console.log(title);
-		console.log(price);
+		setCartQuantity((prevState) => {
+			let currentItem = prevState.find((item) => item.id == id);
+			let newValue = currentItem.quantity++;
+			console.log('currentItem', currentItem);
+			console.log('newValue', newValue);
+			return [ ...prevState ];
+		});
 
 		setCart((prevState) => {
-			return [ ...prevState, {
-				title: title,
-				price: price,
-				id: id
-			} ];
+			return [
+				...prevState,
+				{
+					title: title,
+					price: price,
+					id: id
+				}
+			];
+		});
+
+		setTotal((prevState) => {
+			return prevState + +price.slice(1);
+		});
+	}
+
+	function deleteitem(event) {
+		const { id, title } = event.currentTarget;
+		const price = event.target.getAttribute('price');
+
+		setCartQuantity((prevState) => {
+			let currentItem = prevState.find((item) => item.id == id);
+			let newValue = currentItem.quantity--;
+			return [ ...prevState ];
 		});
 	}
 
@@ -48,7 +88,9 @@ function Index() {
 	return (
 		<Container className="mainContainer">
 			{itemList}
-			{cart.length === 0 ? null : <Cart items={cart} />}
+			{cart.length === 0 ? null : (
+				<Cart cart={cart} quantity={cartQuantity} total={total} />
+			)}
 		</Container>
 	);
 }
