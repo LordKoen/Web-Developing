@@ -8,7 +8,6 @@ function OrderButton(props) {
 			variant="outline-primary"
 			className={layoutStyles.orderButton}
 			cart={props.cart}
-			onClick={handleClick}
 		>
 			Order
 		</Button>
