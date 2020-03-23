@@ -6,10 +6,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.listen(port, () => console.log(`Listening on port ${port}!`));
 
-app.get('/', (request, response) => {
-	response.send('Main Page');
-});
-
-app.post('/order', (request, response) => {
-  console.log(request.body)
+app.post('/', (request, response) => {
+	console.log('I got a request');
+	console.log(request.body);
+	response.end();
 });
