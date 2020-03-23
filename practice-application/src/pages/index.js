@@ -17,8 +17,8 @@ function Index() {
 
 	useEffect(
 		() => {
-			console.log('cart', cart);
-			console.log('cartQuantity', cartQuantity);
+			// console.log('cart', cart);
+			// console.log('cartQuantity', cartQuantity);
 			// console.log('total', total);
 		},
 		[ cart, cartQuantity, total ]
@@ -65,7 +65,7 @@ function Index() {
 		const { id } = event.currentTarget;
 		const price = event.target.getAttribute('price');
 
-		console.log(id);
+		// console.log(id);
 		setCartQuantity((prevState) => {
 			let currentItem = prevState.find((item) => +item.id === +id);
 			if (currentItem.quantity > 0) {
