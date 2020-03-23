@@ -34,3 +34,8 @@ html {
 	padding: 0 5px 1px 5px !important;
 	float: right;
 }
+
+.orderButton {
+	margin: 10px 0px 0px 0px;
+	width: 100%;
+}

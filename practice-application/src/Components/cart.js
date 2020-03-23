@@ -16,7 +16,7 @@ function Cart(props) {
 
 	let items = filteredArr.map((item) => {
 		let currentQuantity = props.quantity.find(
-			(quant) => quant.id == item.id
+			(quant) => +quant.id === +item.id
 		);
 		return (
 			<Card.Text
@@ -52,7 +52,7 @@ function Cart(props) {
 				Grand Total:
 				<span
 					className={layoutStyles.floatRight}
-				>{`£${props.total}`}</span>
+				>{`£${props.total.toFixed(2)}`}</span>
 			</Card.Footer>
 		</Card>
 	);

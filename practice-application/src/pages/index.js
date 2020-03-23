@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import './index.css';
 import ListItems from '../Components/listItems';
 import Cart from '../Components/cart';
+import OrderButton from '../Components/orderButton';
 
 function Index() {
 	const [ cart, setCart ] = useState([]);
@@ -17,7 +18,7 @@ function Index() {
 	useEffect(
 		() => {
 			console.log('cart', cart);
-			// console.log('cartQuantity', cartQuantity);
+			console.log('cartQuantity', cartQuantity);
 			// console.log('total', total);
 		},
 		[ cart, cartQuantity, total ]
@@ -61,7 +62,7 @@ function Index() {
 	}
 
 	function handleDelete(event) {
-		const { id, title } = event.currentTarget;
+		const { id } = event.currentTarget;
 		const price = event.target.getAttribute('price');
 
 		console.log(id);
@@ -80,7 +81,7 @@ function Index() {
 		setCart((prevState) => {
 			let deleteItem = prevState.find((item) => +item.id === +id);
 			let newArr = prevState.filter((item) => {
-				return item != deleteItem;
+				return item !== deleteItem;
 			});
 			return newArr;
 		});
@@ -109,6 +110,7 @@ function Index() {
 					total={total}
 				/>
 			)}
+			{total === 0 ? null : <OrderButton cart={cart} />}
 		</Container>
 	);
 }
