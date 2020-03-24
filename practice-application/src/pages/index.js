@@ -14,19 +14,35 @@ function Index() {
 		return initialState;
 	});
 	const [ total, setTotal ] = useState(0);
+	const [ orderDisplay, setOrderDisplay ] = useState([]);
 
 	useEffect(
 		() => {
 			// console.log('cart', cart);
 			// console.log('cartQuantity', cartQuantity);
 			// console.log('total', total);
+			// console.log('orderDisplay', orderDisplay);
 		},
 		[ cart, cartQuantity, total ]
+	);
+
+	useEffect(
+		() => {
+			setOrderDisplay(() => {
+				let copyArr = Array.from(cartQuantity);
+				let newArr = copyArr.filter((item) => {
+					return item.quantity > 0;
+				});
+				return newArr;
+			});
+		},
+		[ cart ]
 	);
 
 	function cartQuantityInitialise() {
 		let intialState = foodList.map((item) => {
 			return {
+				title: item.title,
 				id: item.id,
 				quantity: 0,
 				price: item.price
@@ -110,7 +126,7 @@ function Index() {
 					total={total}
 				/>
 			)}
-			{total === 0 ? null : <OrderButton cart={cart} />}
+			{total === 0 ? null : <OrderButton cart={orderDisplay} />}
 		</Container>
 	);
 }
