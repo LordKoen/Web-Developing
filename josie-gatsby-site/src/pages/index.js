@@ -110,7 +110,7 @@ function App() {
 								</li>
 								<li className="nav-item ml-auto">
 									<a
-										href="https://www.instagram.com/josieproto/?hl=en"
+										href="https://www.instagram.com/josieproto/?hl=ur"
 										target="_blank"
 										rel="noopener noreferrer"
 										className="nav-link"
@@ -123,7 +123,7 @@ function App() {
 								</li>
 								<li className="nav-item ml-auto">
 									<a
-										href="https://twitter.com/josieproto?lang=en"
+										href="https://twitter.com/josie_proto"
 										target="_blank"
 										rel="noopener noreferrer"
 										className="nav-link"
@@ -137,7 +137,7 @@ function App() {
 								</li>
 								<li className="nav-item ml-auto">
 									<a
-										href=""
+										href="https://open.spotify.com/album/70rvqXfDzvWb4KgGntHOD7?highlight=spotify:track:2JtlPAbff0uGbN5iBPABaj"
 										target="_blank"
 										rel="noopener noreferrer"
 										className="nav-link"
@@ -178,18 +178,10 @@ function App() {
 						</div>
 					</nav>
 					<div className="hero-text">
-						<h1 id="herotext" className="d-none d-lg-inline">
+						<h1 id="herotext" className="d-inline">
 							Josie Proto Music
 						</h1>
-						<p id="herodescription">
-							Lorem ipsum dolor sit amet, consectetuer
-							adipiscing elit. Aenean commodo ligula eget
-							dolor. Aenean massa. Cum sociis natoque
-							penatibus et magnis dis parturient montes,
-							nascetur ridiculus mus. Donec quam felis,
-							ultricies nec, pellentesque eu, pretium quis,
-							sem. Nulla consequat massa quis enim. Donec.
-						</p>
+						<p id="herodescription">BTEC Lily Allen out now</p>
 					</div>
 				</div>
 
@@ -209,12 +201,74 @@ function App() {
 					</div>
 				</div>
 
+				<div className="container-fluid">
+					<div className="row justify-content-center mainDescriptionRow">
+						<div className="col-12 mainDescription text-center">
+							<p>
+								Emerging indie talent Josie Proto today
+								releases the official version of her
+								sass-fuelled viral hit “BTEC Lily Allen” –
+								the perfect introduction to her
+								light-hearted but emotionally compelling
+								style. <br /> <br />
+								Garnering instant validation from Gen-Z
+								internet, “BTEC Lily Allen” immediately
+								went viral across Tik Tok to rack up over
+								360K views and 90K likes, thanks to the
+								track’s universally relatable message of
+								shining in the face of adversity, not
+								giving in to hateful criticisms and
+								learning to be your own biggest fan: “Don’t
+								you call me a BTEC Lily Allen / Say that
+								I’ve got no goddamn talent… I quite like
+								Lily Allen / And I don’t believe in god
+								given talent,” she tells across a pure
+								acoustic backing. <br /> <br />
+								Of “BTEC Lily Allen”, Josie explains:
+								“After I was called a ‘BTEC Lily Allen’ by
+								a girl last year, I collated the negative
+								feedback and moulded the words into a song.
+								This year I downloaded TikTok and posted a
+								1 minute clip of the song to my incredible
+								following of 15 people (granted that around
+								7 were close friends) and left my phone on
+								the side. I came back to my phone a couple
+								of hours later and already had over 10,000
+								views! Over the next few days, I posted the
+								other 2 minutes of the song and gained over
+								300,000 views across all the videos and
+								over 10,000 followers! I stuck true to each
+								of the comments and tried to included them
+								in the exact form they were delivered to me
+								initially. It’s gratifying knowing that the
+								comments that tried to bring me down have
+								done the opposite.” <br /> <br />
+								Josie’s instantaneous Tik Tok fame has
+								already sparked hundreds of cover versions,
+								proof that she’s a future emotional hero in
+								the making for the younger generation with
+								her witty, humourous storytelling capturing
+								experiences and turning them into fun,
+								light-hearted forms of escapism. <br />
+								<br />
+								Inspired by the vulnerability of Carole
+								King, Nina Simone and Sara Bareilles,
+								everyday relatability of Madness and the
+								cross-generational sounds of fellow
+								newcomer Lily Moore, Josie Proto is an
+								exciting new name to pop up in the Britpop
+								scene – expect much more music to come.
+							</p>
+						</div>
+					</div>
+				</div>
+
 				<div className="container p-3">
 					<div className="row justify-content-center">
 						<div className="col-xl-4 col-lg-7 col-md-8 col-sm-11 col-11 twitter-feed order-2">
 							<a
 								className="twitter-timeline"
-								href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw"
+								href="https://twitter.com/josie_proto"
 								data-width="100%"
 								data-height="550.66px"
 								data-theme="light"
