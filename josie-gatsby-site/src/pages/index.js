@@ -95,7 +95,7 @@ function App() {
 							id="navbarMenu"
 						>
 							<ul className="navbar-nav ml-auto">
-								<li className="nav-item ml-auto">
+								{/* <li className="nav-item ml-auto">
 									<a
 										href="https://www.facebook.com/josie.proto.music/"
 										target="_blank"
@@ -107,7 +107,7 @@ function App() {
 										</span>{' '}
 										<i className="fab fa-facebook nav-icon" />{' '}
 									</a>
-								</li>
+								</li> */}
 								<li className="nav-item ml-auto">
 									<a
 										href="https://www.instagram.com/josieproto/?hl=ur"
@@ -276,7 +276,7 @@ function App() {
 								Tweets by TwitterDev
 							</a>{' '}
 							<form
-								action="https://formspree.io/xnqdddbr"
+								action="https://formspree.io/meqzdkre"
 								method="POST"
 								className="text-center white"
 							>
@@ -328,10 +328,10 @@ function App() {
 										data-target="#carouselExampleIndicators"
 										data-slide-to="3"
 									/>
-									<li
+									{/* <li
 										data-target="#carouselExampleIndicators"
 										data-slide-to="4"
-									/>
+									/> */}
 								</ol>
 								<div className="carousel-inner">
 									<div className="carousel-item active">
@@ -341,14 +341,13 @@ function App() {
 											alt="First slide"
 										/>
 									</div>
-									<div className="carousel-item">
+									{/* <div className="carousel-item">
 										<img
 											className="d-block img-fluid w-100"
 											src="./(Edited) Album Cover.png"
 											alt="Second slide"
 										/>
-									</div>
-
+									</div> */}
 									<div className="carousel-item">
 										<img
 											className="d-block img-fluid w-100"
