@@ -189,7 +189,7 @@ function App() {
 					<div className="row justify-content-center banner">
 						<div className="col-12 banner text-center">
 							<a
-								href="spotify"
+								href="https://open.spotify.com/album/70rvqXfDzvWb4KgGntHOD7?highlight=spotify:track:2JtlPAbff0uGbN5iBPABaj"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="banner-text"
@@ -328,34 +328,46 @@ function App() {
 										data-target="#carouselExampleIndicators"
 										data-slide-to="3"
 									/>
+									<li
+										data-target="#carouselExampleIndicators"
+										data-slide-to="4"
+									/>
 								</ol>
 								<div className="carousel-inner">
 									<div className="carousel-item active">
 										<img
 											className="d-block img-fluid w-100"
-											src="./(Edited) Album Cover.png"
+											src="./(Edited) BTEC Lily Allen.png"
 											alt="First slide"
 										/>
 									</div>
 									<div className="carousel-item">
 										<img
 											className="d-block img-fluid w-100"
-											src="./Hero2.jpeg"
+											src="./(Edited) Album Cover.png"
 											alt="Second slide"
 										/>
 									</div>
+
 									<div className="carousel-item">
 										<img
 											className="d-block img-fluid w-100"
-											src="./(Edited) Portrait1.png"
+											src="./Hero2.jpeg"
 											alt="Third slide"
 										/>
 									</div>
 									<div className="carousel-item">
 										<img
 											className="d-block img-fluid w-100"
+											src="./(Edited) Portrait1.png"
+											alt="Fourth slide"
+										/>
+									</div>
+									<div className="carousel-item">
+										<img
+											className="d-block img-fluid w-100"
 											src="./(Edited) Portrait2.png"
-											alt="Second slide"
+											alt="Fifth slide"
 										/>
 									</div>
 								</div>
