@@ -17,17 +17,7 @@ function App() {
 		setNotes(notes);
 	}, []);
 
-	useEffect(
-		() => {
-			setNotes((prevState) => {
-				const goodNotes = prevState.filter((item) => {
-					return item.title !== undefined;
-				});
-				return goodNotes;
-			});
-		},
-		[ allNotes.length ]
-	);
+
 
 	useEffect(
 		() => {

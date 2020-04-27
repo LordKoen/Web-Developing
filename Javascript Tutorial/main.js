@@ -860,46 +860,57 @@
 
 // console.log(fields)
 
-function loopSumTo(n) {
-	let sum = 0;
+// function loopSumTo(n) {
+// 	let sum = 0;
 
-	for (let i = n; i > 0; i--) {
-		sum += i;
-	}
+// 	for (let i = n; i > 0; i--) {
+// 		sum += i;
+// 	}
 
-	return sum;
+// 	return sum;
+// }
+
+// function recursionSumTo(n) {
+// 	let sum = 0;
+
+// 	if (n == 1) {
+// 		return n;
+// 	} else {
+// 		return (sum = n + recursionSumTo(n - 1));
+// 	}
+// }
+
+// function arithmeticSumTo(n) {
+// 	let sum = 0;
+
+// 	return n / 2 * (n + 1);
+// }
+
+// console.log(loopSumTo(5));
+// console.log(recursionSumTo(9999));
+// console.log(arithmeticSumTo(5));
+
+// function factorial(n) {
+// 	let sum = 1;
+
+// 	if (n == 1) {
+// 		return n;
+// 	} else {
+// 		return (sum = n * factorial(n - 1));
+// 	}
+// }
+
+// console.log(factorial(140));
+
+// function fib(n) {}
+
+function testing() {
+	localStorage.setItem('Cart', 'pokemon');
 }
 
-function recursionSumTo(n) {
-	let sum = 0;
+testing();
 
-	if (n == 1) {
-		return n;
-	} else {
-		return (sum = n + recursionSumTo(n - 1));
-	}
+if (localStorage.getItem('Cart') === null) {
+	console.log('Pokemon');
 }
 
-function arithmeticSumTo(n) {
-	let sum = 0;
-
-	return n / 2 * (n + 1);
-}
-
-console.log(loopSumTo(5));
-console.log(recursionSumTo(9999));
-console.log(arithmeticSumTo(5));
-
-function factorial(n) {
-	let sum = 1;
-
-	if (n == 1) {
-		return n;
-	} else {
-		return (sum = n * factorial(n - 1));
-	}
-}
-
-console.log(factorial(140));
-
-function fib(n) {}
