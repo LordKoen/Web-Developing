@@ -1,30 +1,39 @@
 <script>
-	export let name;
+  import Component from "./Component.svelte";
+
+  let counter = 0;
+  let word;
+
+  function handleClick(event) {
+    switch (event.target.name) {
+      case "increment":
+        counter += 1;
+        break;
+      case "decrement":
+        counter = counter - 1;
+        break;
+      case "reset":
+        counter = 0;
+    }
+  }
+
+  $: console.log(counter);
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+  <h1>{counter}</h1>
+  <button on:click="{handleClick}" name="increment">+</button>
+  <button on:click="{handleClick}" name="decrement">-</button>
+  <button on:click="{handleClick}" name="reset">reset</button>
+  <input type="text" name="word" bind:value="{word}" />
+
+  {#if word !== undefined}
+    <Component>{word}</Component>
+  {/if}
 </main>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+  main {
+    text-align: center;
+  }
 </style>
