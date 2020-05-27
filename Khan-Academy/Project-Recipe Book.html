@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Project: Recipe Book</Title>
+        <meta charset="utf-8">
+        <style>
+
+            .white {color: black;}
+            .center {text-align: center;}
+            .box {
+                border: 0.5px solid black; 
+                border-radius: 5px; 
+                background-color: whitesmoke; 
+                margin: 120px; margin-top: 10px; margin-bottom: 10px;
+                padding-left: 5px; padding-right: 5px; padding-top: 0px;
+            }
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            table, th, td {
+                border: solid 1.5px black;
+                border-collapse: collapse;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .carbonarastep1 {
+                float: left;
+                width: 25%;
+                padding: 5px;
+                border: solid black 1px;
+                margin: 3px;
+            }
+            .flex-container {
+                display: flex;
+                flex-wrap: nowrap;
+            }
+            .lasagnastep{
+                float: left;
+                width: 33%;
+                padding: 5px;
+                border: solid black 1px;
+                margin: 3px;
+            }
+            body {
+                font-size: 90%;
+            }
+            
+        </style>
+    </head>
+    <body style="background-color: rgb(247, 235, 247);">
+
+        <h1 style="text-align: center; border: 2px solid rgb(190, 51, 71); background-color: rgb(204, 51, 71);" class="white" id="top">Luca's Recipe Book</h1>
+
+        <div class="box" style="width: 180px;;">
+            <p style="font-size: 20px; margin-top: 4px;"><strong>Recipes:</strong></p>
+            <ol>
+                <li><a href="#PastaCarbonara">Pasta Carbonara</a></li>
+                <li><a href="#Lasagna">Lasagna</a></li>
+                <li><a href="#BeefStroganoff">Beef Stroganoff</a></li>
+            </ol>
+        </div>
+
+        <div class="box clearfix" >
+
+            <img style="float: right; margin: 10px; margin-bottom: 10px; margin-right: 10px; margin-top: 20px; border: solid 1px black;" src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1001491_11.jpg?itok=-ns0A_kt" alt="Delicious plate of Carbonara Pasta" width="300px">
+            <h2 id="PastaCarbonara" style="margin-left: 10px;">Pasta Carbonara:</h2> 
+        
+            <ul>
+                <li>Preperation Time: 15 Mins - 20 Mins</li>
+                <li>Cooking: 15 Mins</li>
+                <li>Difficulty: Easy</li>
+                <li>Serves 4</li>
+                <p>
+                    Carbonara pasta is one of the easiest types of pasta a person can make, 
+                    however this does not mean that it doesn't taste great. And after a bit 
+                    of practice you can easilly make a delicious dish to impress someone 
+                    or if you are simply not feeling like the same food for the 5th day in a row.
+                </p>
+            </ul>
+            
+            <h2 style="margin-left: 10px;">Ingredients:</h2>    
+            
+            <ul><table>
+                <thead>
+                   <tr>
+                       <th>Ingredients</th>
+                       <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       <td>Pancetta</td>
+                       <td>100g</td>
+                    </tr>
+                    <tr>
+                       <td>Pecorino Cheese</td>
+                       <td>50g</td>
+                    </tr>
+                    <tr>
+                       <td>Parmesan</td>
+                       <td>50g</td>
+                    </tr>
+                    <tr>
+                       <td>Large Eggs</td>
+                       <td>3</td>
+                    </tr>
+                    <tr>
+                       <td>Spaghetti</td>
+                       <td>350g</td>
+                    </tr>
+                    <tr>
+                       <td>Plump Garlix Cloves</td>
+                       <td>2</td>
+                    </tr>
+                    <tr>
+                       <td>Unsalted Butter</td>
+                       <td>50g</td>
+                    </tr>
+                    <tr>
+                       <td>Sea Salt and Black Pepper</td>
+                       <td>As much as you want!</td>
+                    </tr>
+                </tbody>
+            </table></ul>
+           
+            <div class="flex-container">
+
+                <div class="carbonarastep1" style="background-color: #aaa;">
+                    <p><strong>Step 1:</strong><br>Put a large saucepan of water to boil.</p> 
+                </div>
+                <div class="carbonarastep1" style="background-color: #bbb;">
+                    <p><strong>Step 2:</strong><br>Finely chop the pancetta and finely grate the pecorino and parmesan cheese. Mix them all together</p>
+                </div>
+                <div class="carbonarastep1" style="background-color: #ccc;">
+                    <p><strong>Step 3:</strong><br>Beat the eggs into a medium bowl and season with a little black pepper.</p> 
+                </div>
+                <div class="carbonarastep1" style="background-color: #ddd;">
+                    <p><strong>Step 4:</strong><br>Add 1tsp of salt to the boiling water and the Spaghetti</p> 
+                </div>
+
+            </div>
+
+            <div class="flex-container">
+
+                <div class="carbonarastep1" style="background-color: #aaa;">
+                    <p><strong>Step 5:</strong><br>Squash the peeled plump garlic cloves with a knife blade</p> 
+                </div>
+                <div class="carbonarastep1" style="background-color: #bbb;">
+                    <p><strong>Step 6:</strong><br>Drop 50g of butter into a frying pan and as soon as the butter has melted, fry the pancetta and garlic</p>
+                </div>
+                <div class="carbonarastep1" style="background-color: #ccc;">
+                    <p><strong>Step 7:</strong><br>Cook until the pancetta is golden and crisp (about 5 mintues). Discard the garlic</p> 
+                </div>
+                <div class="carbonarastep1" style="background-color: #ddd;">
+                    <p><strong>Step 8:</strong><br>Keep the Pancetta on low heat. Lift the Pasta from the water with tongs and put it in the pan with the pancetta.</p> 
+                </div>
+
+            </div>
+
+            <div class="flex-container">
+
+                <div class="carbonarastep1" style="background-color: #aaa;">
+                    <p><strong>Step 9:</strong><br>Mix the cheese and eggs together, keeping some for sprinkling over later.</p> 
+                </div>
+                <div class="carbonarastep1" style="background-color: #bbb;">
+                    <p><strong>Step 10:</strong><br>Take the pan of the heat and quickly pour the egg and cheese into it. Use the tongs to lift the Spaghetti and make sure everything is well mixed</p> 
+                </div>
+                <div class="carbonarastep1" style="background-color: #ccc;">
+                    <p><strong>Step 11:</strong><br>Add some seasoning in the form of salt and black pepper (Optional Step).</p> 
+                </div>
+                <div class="carbonarastep1" style="background-color: #ddd;">
+                    <p><strong>Step 12:</strong><br>Use a long-pronged fork to twist the pasta on to the serving plante or bowl.</p> 
+                </div> 
+           
+            </div>
+
+            <p style="margin-top: 2px; margin-bottom: 5px;">For the full recipe: <a target="_blank" href="https://www.bbcgoodfood.com/recipes/ultimate-spaghetti-carbonara-recipe">BBCgoodfood</a></p>
+        
+        </div>
+
+        <div class="box clearfix" >
+
+                <img style="float: right; margin-left: 10px; margin-bottom: 10px; margin-right: 10px; margin-top: 20px; border: solid 1px black;" src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1273579_7.jpg?itok=SD4k34fj" alt="Delicious plate of Lasagna" width="300px">
+                <h2 id="Lasagna" style="margin-left: 10px;">Lasagna:</h2> 
+            
+                <ul>
+                    <li>Preperation Time: 20 Mins</li>
+                    <li>Cooking: 1 Hr and 40 Mins</li>
+                    <li>Difficulty: Easy</li>
+                    <li>Serves 6</li>
+                    <p>
+                        Lasagna is a classic dish which is prepared around the whole world. It can take many forms
+                        which means that everyone will like it in one way or another. However, today I am going to present
+                        you guys which a recipe for a classic Lasagna, and I will show how easy it is to make it.
+                        Another perk of this is that it can be frozen, and quickly unfrozen for a quick delicious meal at a later date!
+                    </p>
+                </ul>
+                
+                <h2 style="margin-left: 10px;">Ingredients:</h2>    
+                
+                <ul><table>
+                    <thead>
+                       <tr>
+                           <th>Ingredients</th>
+                           <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                           <td>Olive Oil</td>
+                           <td>2 tbsp</td>
+                        </tr>
+                        <tr>
+                           <td>Lean beef mince</td>
+                           <td>750g</td>
+                        </tr>
+                        <tr>
+                           <td>Prosciutto</td>
+                           <td>90g</td>
+                        </tr>
+                        <tr>
+                           <td>Tomato Sauce</td>
+                           <td>800g</td>
+                        </tr>
+                        <tr>
+                           <td>Beef Stock (Hot)</td>
+                           <td>200ml</td>
+                        </tr>
+                        <tr>
+                           <td>Fresh Lasagna Sheets</td>
+                           <td>300g</td>
+                        </tr>
+                        <tr>
+                           <td>White Sauce</td>
+                           <td>520g</td>
+                        </tr>
+                        <tr>
+                           <td>Mozzarella Strips</td>
+                           <td>125g</td>
+                        </tr>
+                        <tr>
+                            <td>Grated Nutmeg</td>
+                            <td>As much as you want!</td>
+                        </tr>
+                    </tbody>
+                </table></ul>
+               
+                <div class="flex-container">
+    
+                    <div class="lasagnastep" style="background-color: #aaa;">
+                        <p><strong>Step 1:</strong><br>Heat 2 tbsp of olive oil in a frying pan and cook the lean beef in two batches for about 10 minutes each.</p> 
+                    </div>
+                    <div class="lasagnastep" style="background-color: #bbb;">
+                        <p><strong>Step 2:</strong><br>Finely chop 4 slices of prosciutto from a 90g pack, then stir through the mext mixture.</p>
+                    </div>
+                    <div class="lasagnastep" style="background-color: #ccc;">
+                        <p><strong>Step 3:</strong><br>Pour the tomato sauce and the beef stock. Add the nutmeg, then season.</p> 
+                    </div>
+    
+                </div>
+    
+                <div class="flex-container">
+    
+                    <div class="lasagnastep" style="background-color: #aaa;">
+                        <p><strong>Step 4:</strong><br>Bring up to the boil, the simmer for 30 minutes until the sauce looks rich.</p> 
+                    </div>
+                    <div class="lasagnastep" style="background-color: #bbb;">
+                        <p><strong>Step 5:</strong><br>Heat oven to 180C/fan/160C/gas 4 and lightly oil an ovenproof dish (about 30 x 20cm).</p>
+                    </div>
+                    <div class="lasagnastep" style="background-color: #ccc;">
+                        <p><strong>Step 6:</strong><br>Spoon one third of the meat sauce into the dish, then cover with lasagna sheets. Drizzle over roughly 140g of the white sauce.</p> 
+                    </div>
+                    
+                </div>
+    
+                <div class="flex-container">
+    
+                    <div class="lasagnastep" style="background-color: #aaa;">
+                        <p><strong>Step 7:</strong><br>Repeat step 6 until there are 3 layers of pasta and cover the top with the rest of the white sauce. Make sure to cover all the pasta.</p> 
+                    </div>
+                    <div class="lasagnastep" style="background-color: #bbb;">
+                        <p><strong>Step 8:</strong><br>Scatter the mozzarella over the top.</p> 
+                    </div>
+                    <div class="lasagnastep" style="background-color: #ccc;">
+                        <p><strong>Step 9:</strong><br>Arrange the rest of the prosciutto on top. Bake for 45 mins until the top is bubbling and lightly browned.</p> 
+                    </div>
+                    
+                </div>
+    
+                <p style="margin-top: 2px; margin-bottom: 5px;">For the full recipe: <a target="_blank" href="https://www.bbcgoodfood.com/recipes/10602/classic-lasagne">BBCgoodfood</a></p>
+            
+            </div>
+
+            <div class="box clearfix" >
+
+                    <img style="float: right; margin-left: 10px; margin-bottom: 10px; margin-right: 10px; margin-top: 20px; border: solid 1px black;" src="https://www.rhodesquality.com/app/uploads/2017/04/beef-stroganoff-recipe-800x800-c-default.jpg" alt="Delicious plate of Lasagna" width="300px">
+                    <h2 id="BeefStroganoff" style="margin-left: 10px;">Beef Stroganoff:</h2> 
+                
+                    <ul>
+                        <li>Preperation Time: 10 Mins</li>
+                        <li>Cooking: 35 Mins</li>
+                        <li>Difficulty: Easy</li>
+                        <li>Serves 4</li>
+                        <p>
+                            Beef Stroganoff is a favourite dish of mine, my mother used to always make it on special ocassions when I was younger
+                            which means that I was always really fond of it as I grew up. <br> Although it can be eaten on its own, it can also be served in many ways
+                            including with rice or with pasta. It is also quite easy to cook so I am here to share this recipe. I really enjoy coding and cannot wait to go back to it
+                        </p>
+                    </ul>
+                    
+                    <h2 style="margin-left: 10px;">Ingredients:</h2>    
+                    
+                    <ul><table>
+                        <thead>
+                           <tr>
+                               <th>Ingredients</th>
+                               <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                               <td>Olive Oil</td>
+                               <td>1 tbsp</td>
+                            </tr>
+                            <tr>
+                               <td>Sliced Onion</td>
+                               <td>1</td>
+                            </tr>
+                            <tr>
+                               <td>Clove of Garlic</td>
+                               <td>1</td>
+                            </tr>
+                            <tr>
+                               <td>Butter</td>
+                               <td>1 tbsp</td>
+                            </tr>
+                            <tr>
+                               <td>Sliced Mushroom</td>
+                               <td>250g</td>
+                            </tr>
+                            <tr>
+                               <td>Plain Flour</td>
+                               <td>1 tbsp</td>
+                            </tr>
+                            <tr>
+                               <td>Sliced fillet steak</td>
+                               <td>500g</td>
+                            </tr>
+                            <tr>
+                               <td>Creme fraiche</td>
+                               <td>150g</td>
+                            </tr>
+                            <tr>
+                                <td>English Mustard</td>
+                                <td>1 tbsp</td>
+                            </tr>
+                            <tr>
+                                <td>Beef Stock</td>
+                                <td>100 ml</td>
+                            </tr>
+                            <tr>
+                                <td>Chopped Parsley</td>
+                                <td>As much as you want!</td>
+                            </tr>
+                        </tbody>
+                    </table></ul>
+                   
+                    <div class="flex-container">
+        
+                        <div class="lasagnastep" style="background-color: #aaa;">
+                            <p><strong>Step 1:</strong><br>Heat 1 tbsp olive oil in a non-stick frying pan then add 1 sliced onion and cook on a medium heat until completely softened, around 15 mins.</p> 
+                        </div>
+                        <div class="lasagnastep" style="background-color: #bbb;">
+                            <p><strong>Step 2:</strong><br>Crush in 1 garlic clove and cook for 2-3 mins more, then add 1 tbsp butter.</p>
+                        </div>
+                        <div class="lasagnastep" style="background-color: #ccc;">
+                            <p><strong>Step 3:</strong><br>Once the butter is foaming a little, add 250g sliced mushrooms and cook for around 5 mins until completely softened</p> 
+                        </div>
+        
+                    </div>
+        
+                    <div class="flex-container">
+        
+                        <div class="lasagnastep" style="background-color: #aaa;">
+                            <p><strong>Step 4:</strong><br>Season everything well, then tip onto a plate.</p> 
+                        </div>
+                        <div class="lasagnastep" style="background-color: #bbb;">
+                            <p><strong>Step 5:</strong><br>Tip 1 tbsp plain flour into a bowl with a big pinch of salt and pepper, then toss the sliced fillet steak in the seasoned flour.</p>
+                        </div>
+                        <div class="lasagnastep" style="background-color: #ccc;">
+                            <p><strong>Step 6:</strong><br>Add the steak pieces to the pan, splashing in a little oil if the pan looks dry, and fry for 3-4 mins, until well coloured.</p> 
+                        </div>
+                        
+                    </div>
+        
+                    <div class="flex-container">
+        
+                        <div class="lasagnastep" style="background-color: #aaa;">
+                            <p><strong>Step 7:</strong><br>Tip the onions and mushrooms back into the pan. Whisk the crème fraîche, 1 tsp English mustard and the beef stock together, then stir into the pan.</p> 
+                        </div>
+                        <div class="lasagnastep" style="background-color: #bbb;">
+                            <p><strong>Step 8:</strong><br>Cook over a medium heat for around 5 mins.</p> 
+                        </div>
+                        <div class="lasagnastep" style="background-color: #ccc;">
+                            <p><strong>Step 9:</strong><br>Scatter with some chopped parsley, and serve with pappardelle or rice.</p> 
+                        </div>
+                        
+                    </div>
+        
+                    <p style="margin-top: 2px; margin-bottom: 5px;">For the full recipe: <a target="_blank" href="https://www.bbcgoodfood.com/recipes/beef-stroganoff">BBCgoodfood</a></p>
+                
+                </div>
+
+                <a href="#top">Back to the top</a>
+                <script type="text/javascript" src="C:\Personal Files\Programming\HTML\Random\Recipe Book Js.js"></script>
+    </body>
+</html>

@@ -1,39 +1,27 @@
 <script>
-  import Component from "./Component.svelte";
-
-  let counter = 0;
-  let word;
-
-  function handleClick(event) {
-    switch (event.target.name) {
-      case "increment":
-        counter += 1;
-        break;
-      case "decrement":
-        counter = counter - 1;
-        break;
-      case "reset":
-        counter = 0;
-    }
+  function handleClick(value) {
+    console.log(value);
   }
 
-  $: console.log(counter);
+  const object = {
+    name: "pokemon",
+    value: 21,
+    id: 12
+  };
 </script>
 
 <main>
-  <h1>{counter}</h1>
-  <button on:click="{handleClick}" name="increment">+</button>
-  <button on:click="{handleClick}" name="decrement">-</button>
-  <button on:click="{handleClick}" name="reset">reset</button>
-  <input type="text" name="word" bind:value="{word}" />
-
-  {#if word !== undefined}
-    <Component>{word}</Component>
-  {/if}
+  <h1 on:click={() => handleClick(object)} name="pokemon" value="platinum">
+    Click me
+  </h1>
 </main>
 
 <style>
   main {
     text-align: center;
+  }
+
+  main {
+    color: blue;
   }
 </style>
